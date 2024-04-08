@@ -1,0 +1,11 @@
+React Setup:
+
+1.  Make a new folder and give any name.
+2.  Open it in vscode.
+3.  Open terminal.
+4.  npm install -g create-react-app
+5.  npx create-react-app test-react
+6.  cd test-react
+7.  npm start
+
+React will auto launch it's default app in a browser.

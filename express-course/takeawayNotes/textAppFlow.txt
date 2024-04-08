@@ -1,0 +1,12 @@
+REST API Flow in Express:
+
+1.  index.js / server.js  =>  Where the server is created by importing express, json, db connection and defining port listen
+2.  constant.js           =>  Where the port number is defined
+3.  connectToMongoDb.js   =>  Where the db connection function is created and port is assigned to it
+4.  Schema                =>  Where the db objects are defined and parameters are set
+5.  model.js              =>  Where the objects created in schema are assigned a name and called
+6.  service.js            =>  Where promise functions are created that return data through async / await. Database related code.
+7.  controller.js         =>  Where the application logic is created i.e middlewares, using async where await is wrapped inside try block
+8.  router.js             =>  Where a router is created to route the controller logic in turn creating a REST api for static / dynamic routes
+9.  index.js              =>  Where the route entry is defined and router is assigned next to it for route call
+10. postman               =>  Where the crud operation is tested for successful request / response cycle through body, params, query 

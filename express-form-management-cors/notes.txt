@@ -1,0 +1,62 @@
+Prettier:
+    Install prettier globally:
+        npm install --global prettier
+
+    Format entire project with prettier:
+        prettier --write "**/*"
+
+Dot ENV:
+        .env:
+            You must make dotenv file in root directory
+            Variable declaration in dotenv is done in CONSTANT_CASE
+            Data types are always string in dotenv so no need to wrap a value in "".
+
+        config():
+            If dotenv is not configured in index then env variables will be declared undefined.
+
+        use-case:
+            dotenv is used to store sensitive changeable data.
+            data such as email, password, application port, url etc
+
+        example:
+            .env:
+                FULL_NAME = Sid
+                AGE = 25
+                IS_MARRIED = true
+
+            .index.js:
+                import { config } from "dotenv";
+                config(); // initialize dotenv
+
+                console.log(process.env.FULL_NAME);
+                console.log(process.env.AGE); 
+                console.log(process.env.IS_MARRIED);
+                console.log(typeof process.env.IS_MARRIED);
+
+        flow:
+            define variable in dot env
+            call dot env variable in separate file (constant.js)
+
+CORS:
+    CORS stands for Cross Origin Resource Sharing
+    Enable CORS for any front-end to interact with backend API
+
+
+
+Keyboard Shortcuts:
+    f2                      =>  rename a file on vscode
+    ctrl + /                =>  single-line comment
+    alt + shift + a         =>  multi-line comment
+    alt + shift + down key  =>  to duplicate a line and place in the next line
+    ctrl + `                =>  open/close a new terminal
+    ctrl + b                =>  open/close folder structure
+    ctrl + .                =>  to show spelling suggestion
+    ctrl + d                =>  selects the next matching selection
+    alt + click             =>  selects another line point to make multiple changes
+    ctrl + space key        =>  to import a variable in a file
+    ctrl + r                =>  refresh database table on mongo compass
+    alt + shift + o         =>  auto organize imports (helpful feature)
+    ctrl + alt + []         =>  /Preferences/Keyboard Shortcuts =>  code fold all (left bracket) / unfold all (right bracket)
+    ctrl + shift + =        =>  collapse all folders inside file explorer
+    crl + k                 =>  Settings for Keyboard shortcuts
+    crl + ,                 =>  Settings for VS Code

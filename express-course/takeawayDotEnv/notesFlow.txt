@@ -1,0 +1,29 @@
+register:
+    send data from postman (req.body)
+    hash password using bcrypt
+    add new values to the sent data (isVerifiedEmail: false,)
+    post new data to database (User.create(data))
+    generate token from _id (let infoObj = {_id: result._id,};)
+
+send email:
+    send generated token as a link in email using nodemailer
+
+verify email:
+    send token from postman
+    get token sent from postman in app
+    verify get token
+    get _id from token
+    convert the value of isVerifiedEmail: true
+
+user login:
+    email:
+        check if user email exists, if not found throw error
+        check if user email is verified, if not throw error
+
+    password:
+        check if user password matches, if not throw error
+
+    token:
+        if everything is alright generate a token
+        attach _id in the generated token
+        send the token to postman

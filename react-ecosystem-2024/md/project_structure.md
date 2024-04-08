@@ -1,0 +1,24 @@
+- index.html
+- script.js
+- sections
+  - reactModules.html
+  - styling.html
+  - reactFramework.html
+  - uiComponents.html
+  - uicomponents
+    - basicC.html
+    - interactiveC.html
+    - complexC.html
+    - dataPresentationC.html
+    - contentC.html
+    - userInteractionC.html
+    - engagementC.html
+    - errorLoadingC.html
+    - eCommerceC.html
+    - informationC.html
+    - navigationUtilityC.html
+    - userInteractionFeaturesC.html
+    - complianceC.html
+    - socialC.html
+    - authenticationC.html
+- project_structure.md

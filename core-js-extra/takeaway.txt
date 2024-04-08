@@ -1,0 +1,43 @@
+Let, const, var:
+
+Block level scope:
+    temporal dead zone
+    accessible scope
+
+Function level scope:
+
+Detail of var:
+    Lexical-scope
+    scope-chaining
+    closure
+
+Function scope:
+    function-level-scope = accessible scope
+    there is no TDZ concept in var, all are accessible scope
+
+Temporal dead zone:
+
+Accessible Zone:
+
+We can redefine variable if it is defined using var
+
+Callback function:
+    Function which is passed is called callback function
+    Function which passes another function is call higher order function
+
+HOF (Higher Order Function):
+    Function which takes an argument as a function
+    Function which returns another function
+
+Scope chaining:
+
+Lexical Scope:
+    It is only the scope of parent. That's it.
+    It is not the scope of grand-parent
+
+Closure:
+    Function with it's lexical scope is called closure
+
+Note:
+    Always store a function that returns something in a variable and call it.
+    Example: 14.closureExample

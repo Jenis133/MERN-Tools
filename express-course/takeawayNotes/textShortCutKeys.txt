@@ -1,0 +1,16 @@
+Useful Shortcuts:
+
+f2                      =>  rename a file on vscode
+ctrl + /                =>  single-line comment
+alt + shift + a         =>  multi-line comment
+alt + shift + down key  =>  to duplicate a line and place in the next line
+ctrl + `                =>  open/close a new terminal
+ctrl + b                =>  open/close folder structure
+ctrl + .                =>  to show spelling suggestion
+ctrl + d                =>  selects the next matching selection
+alt + click             =>  selects another line point to make multiple changes
+ctrl + space key        =>  to import a variable in a file
+ctrl + r                =>  refresh database table on mongo compass
+alt + shift + o         =>  auto organize imports (helpful feature)
+ctrl + alt + []         =>  /Preferences/Keyboard Shortcuts =>  code fold all (left bracket) / unfold all (right bracket)
+crl + ,                 =>  Settings for VS Code

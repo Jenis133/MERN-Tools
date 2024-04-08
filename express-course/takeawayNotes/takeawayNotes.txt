@@ -1,0 +1,158 @@
+CRUD:
+    create => post
+    read => get
+    update => patch (partial update) / put (full update)
+    delete => delete
+
+    CRUD is always directly related to the database
+
+URL:
+    localhost:8000/a/b?nitan&age=29&address=gagalphedi
+    
+    URL = route (base url + route params) + query
+    URL is made up of route and query
+    URL is always string
+
+    route = baseUrl + route params
+    Route is made up of base url and route params
+    
+    Ex:
+    route = localhost:8000/a/b
+    baseUrl = localhost:8000
+    route params = /a/b
+
+    query = name=nitan&age=29&address=gagalphedi
+
+PostMan:
+    We can send data in postman by three ways => body, params, query
+
+Controller & Router:
+    req.body
+    req.params = {id:anything}
+
+API:
+    API handles request / response cycle
+    One request must have one response
+
+Middleware:
+    Middleware are functions which contains request response and next
+    next () is used to trigger another middleware
+
+    We have two types of middleware:
+        error middleware (err,req,res,next) => {}
+            to trigger error middleware we have to call next (value)
+        normal middleware (req,res,next) => {}
+            to trigger normal middleware we have to call next ()
+
+    Middleware is divided into two parts
+        Route middleware
+        Application middleware
+
+        A middleware in index is an application middleware
+    
+Model:
+    Model defines an array that has name , object
+    Ex: model ("User", userSchema); 
+    So, Model -> name , object *The object is called from Schema
+
+Model convention:
+    The first letter of model name must be capital and singular
+    Variable name and model name must be same    
+
+Schema:
+    Schema defines an object that has key and value where the value will have required and type parameters
+    Ex: let userSchema = Schema({
+        name: {
+            required: true,
+            type: String,
+        },
+        password: {
+            required: true,
+            type: String,
+        },
+    });
+    So, Schema -> object -> {key: {required: value, type: value,},};
+
+Schema Work:
+    Schema on student done.
+
+Services:
+    Database related code is set in services
+
+    Populate means to show the properties of an id i.e name, address or whatever property was set in it.
+
+    id always comes from req.params.id
+    data always comes from req.body
+    always keeps database related code in service
+
+    Service sends data in database
+
+Controller:
+    Controller is where the application logic is stored.
+
+    Always wrap await/async in a try catch block.
+    Ex: export let createUserController = async (req, res, next) => {
+            try {
+                const result = await createUserService(req.body); //posts in mongodb
+                res.status(201).json({
+                    success: true,
+                    message: "Post method: User created successfully",
+                    result: result, // use await for this part // add async if await is used.
+                });
+            } catch (error) {
+                res.status(400).json({
+                    success: true,
+                    message: error.message,
+                });
+            }
+        };
+
+Route:
+    Route entry should be in plural case as a convention
+    Ex: expressApp.use("/users", userRouter);
+
+    Data is always displayed in an array with an object element
+
+    Always place dynamic route at the end of the route list to avoid conflict
+    Ex: localhost:8000/users and localhost:8000/id (users) will output different results based on where they are placed
+
+Product flow:
+    Product (name, price, quantity)
+
+    Schema => Model => Service => Controller => Route => Index
+    Postman =>
+    Make crud for every schema (GET, POST, Patch, Delete) => Body => raw => JSON
+    Once a new database is created for CRUD always save the collection with the right parameters
+
+    Check if .js is added or not during import
+
+    Empty line space can add to file size so give space sensibly
+
+Http Status codes:
+    success (2XX)
+
+    C   201
+    R   200
+    U   201
+    D   200
+
+    failure (4XX)
+    400
+
+Date:
+    Date are always stored in ISO format. (GMT)
+
+MongoDB:
+    In mongodb data type must start with uppercase like String, Number, Boolean etc
+    In mongodb array is called as a collection. (Defining collection is called making model)
+    In mongodb object is called as document. (Defining document is called making schema)
+    It means data are saved in the form of collection of document.
+
+JOI:
+    Use JOI validation for backend validation
+
+Extra:
+    Always pass default value - specially in a function
+    id is in string
+    data is in object
+    query is in object

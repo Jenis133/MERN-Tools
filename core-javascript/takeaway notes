@@ -1,0 +1,164 @@
+# Day 1
+
+    What is front-end, back-end and database?
+    What is MERN?
+
+# DAY 2
+
+JS is a single-threaded (executing once at a time) synchronous language.
+Commented code will not run.
+
+Datatype:
+There are three data types - number, string & boolean
+Strings are always wrapped by ("").
+Boolean are true or false values.
+
+(;) are not particularly required in Javascript to declare a statement closing.
+
+Operators:
+1 + 1 = 2
+"1" + "1" = "11"
+"1" + 1 = "11" string takes priority over number
+
+In js operations are performed between two values.
+
+# Day 3
+
+Variable:
+A variable is a container that stores any data. It acts according to the value it contains.
+We must define variable before calling it (variable)
+
+Variable name must be descriptive. So try not to use a or b instead use num1 and num2.
+Also pay attention to naming conventions.
+$ and \_ can be used other than alphabets and numbers. However, numbers cannot be used at the start of a variable name.
+Follow camelcase convention. He is married would be heIsMarried.
+
+Error:
+address is not defined => it means address variable is not defined
+Else "ReferenceError: me is not defined" error will be displayed
+
+JS is a dynamic language because a variable can store different data types at different time.
+However in a static or strongly typed language like Java you can only store a different value for a data type but cannot change
+the data type itself.
+
+String:
+It can be defined by using single quotes ('') or double quotes ("")
+We cannot use single quotes inside single quotes and same for double quotes
+
+# Day 4:
+
+Undefined:
+Undefined is a data type that is not initialized. It means a value is not assigned after a variable is defined.
+
+Import & Export:
+A variable can only be called within its file by default.
+To call it in another file you will have to use export and import keyword
+Use export keyword for the variable in the file you are exporting from
+Use ctrl + space key to add the import keyword to the file you are importing in.
+
+    Export by variable name:
+        A file has many export by variable name
+        It needs ({}) while importing the variable
+        While importing you should use the exact variable name to avoid error
+
+    Export by default:
+        A file has only one export by default
+        It does need ({}) while importing the variable
+        While importing you can change the default variable name to avoid conflict
+
+    Import by alias:
+        If two variables of some name from different source are imported you should use alias
+        To use alias you simply assign a name to the variable right next to it in import statement
+            /* Example: import {Sid as Siddhartha} from "./sid.mjs;
+                        console.log (Siddhartha); */
+
+Conversion:
+"1234" will be displayed as 1234 on the terminal.
+Only a number string can be converted to a number and vice versa. Example: 1 !== a
+
+    Boolean conversion:
+        All empty are falsy values i.e either "" or 0.
+
+        for boolean to string conversion
+            "" => falsy
+            all are truthy
+
+        for boolean to number conversion
+            0 => falsy
+            all are truthy
+
+Useful shortcut = Alt + Shift + A to comment multiple lines.
+
+String Literals:
+String can be defined using a ('') or ("") or (`).
+    However we can not use a ('') inside a ('').
+    Use ${variable} to call a variable inside a string using (`).
+However this is not possible with a ("") or a ('').
+However this is not possible with a ("") or a ('').
+
+# Day 5:
+
+    Nested Loop
+    Functions
+
+#Day 6:
+Functions:
+Every curly braces is like a new file.
+We can define variable, call variable and so on.
+But, we cannot export variable defined inside curly braces.
+
+#Day 7:
+Key Note:
+Press alt + shift + down arrow to duplicate a statement in the next line
+Select a common word and press Ctrl + D to select the remaining common words.
+
+#Day 8:
+The number of codes, number of lines and number of variables must be as less as possible.
+They must satisfy the programming logic with necessary codes only.
+
+check map, filter and reduce in array. // important
+check for, while and do-while.
+
+#Day 9:
+Map in loop
+
+F2 is to rename a file.
+
+#Day 10:
+Find method
+Every, Filter, Map & Some can only be used in Array.
+
+#Day 11: Class on 11:30 am
+
+Interview Questions:
+Define js -
+truthy and falsy values -
+
+#Day 13:
+Ctrl + . = Spelling Suggestions
+// import and export are not supported in .js extension
+
+#Day 15:
+// Try to make code as less as possible
+// If there's only one line of code within a scope of an ifElse function then there's no need to write it inside ({})
+
+Map & Filter:
+Map is used to modify element of input whereas Filter is used to filter element of input
+If you want to modify a value then use map but if you want to filter a value then use filter
+If you have to use filter and map together then use filter first and then map
+
+#Day 16:
+Git push process:
+
+git init
+Make connection by copy paste:
+	git remote add origin https://gitlab.com/nitanthapa425/dw-11-express.git
+git add .
+git commit -m "test" // add message in ""
+git push origin master // branch is master
+Click on the large noticeable link out of the two
+enter your gitlab username
+enter your gitlab password
+Click on yes to go to gitlab
+click on merge branch
+click on merge again

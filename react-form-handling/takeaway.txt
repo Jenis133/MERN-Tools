@@ -1,0 +1,12 @@
+form handling (5 days)
+formik
+yup
+localstorage (1 day) in (React playlist)
+login management (5 days)
+rtk (9 days)
+
+
+input       value         e.target.value
+all         value         e.target.value i
+checkbox    checked       e.target.checked
+radio       checked       e.target.value

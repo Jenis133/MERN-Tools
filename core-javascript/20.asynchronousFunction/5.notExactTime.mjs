@@ -1,0 +1,3 @@
+/* 
+    setTimeout guarantee the minimum time a function gets executed but does not guarantee the exact time
+ */

@@ -1,0 +1,24 @@
+{
+    "entry": 1,
+    "name": "Sid Sherpa",
+    "age": 25,
+    "isMarried": false,
+    "dateOfBirth": "1999-01-29",
+    "gender": "male",
+    "nationality": "nepali",
+    "address": "gyaneshwor-kathmandu",
+    "phoneNumber": 9745338596,
+    "email": "sidsherpa.codes@gmail.com",
+    "userName": "sidsherpa.codes",
+    "password": "Testpassword@1",
+    "programmingLanguage": [
+        {
+        "language": "Javascript",
+        "framework": "Express"
+        },
+        {
+        "language": "Java",
+        "framework": "SpringBoot"
+        }
+    ]
+}

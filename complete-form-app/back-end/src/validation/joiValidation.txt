@@ -1,0 +1,43 @@
+.string()
+    Value must be in string
+    It should not be empty
+
+.min(3)
+    The field must have at least 3 characters
+
+.max(25)
+    The field must have at most 25 characters
+
+.number()
+    Value must be in number.
+    It does not see type for number. Ex: "age": "25", This means 25 and "25" are seen as same.
+    The .min(18) in number means the value must be more than or equal to 18 and not the length
+    The .max(60) in number means the value must be less than or equal to 60 and not the length
+
+.boolean()
+    Value must be in boolean
+
+.required()
+    The field is mandatory and must be passed
+
+enum
+    Enum is fixed value. It's a condition that must be matched
+    .valid("male","female")
+
+custom error
+    .custom((value, msg) => {})
+    value.match(//) checks regex patterns
+
+object
+    programmingLanguage: Joi.object().keys({
+        language: Joi.string().required(),
+        framework: Joi.string().required(),
+    }),
+
+array
+    favoriteLanguage: Joi.array().items(Joi.string().required()), // array of string
+
+    programmingLanguage: Joi.array().items(Joi.object().keys({ // array of object
+        language: Joi.string().required(),
+        framework: Joi.string().required(),
+    })),

@@ -1,0 +1,68 @@
+Note:
+    React variable can store tag
+    React function can return tag like <div></div>
+    Anything this is return by a function are printed in browser (dom)
+    Use curly braces ({}) to call a variable inside a tag
+    Write all code inside one wrapper that is returned for every container
+
+    ctrl + shift + i to access developer option
+
+SEO:
+    Make sure you use only one <h1> tag in any given page
+    Do not use more than one <h1> tag. Use other tags instead
+
+Image:
+    Always place images inside public folder
+    In image . means public folder
+
+Cases:
+    fullName => camel case (js)
+    FullName => pascal case (python)
+    full-name => kebab case (css, url, package name) react-router-dom
+    FULL_NAME => upper case (.env)
+    full_name => snake case (user email)
+
+CSS:
+    inline css
+    internal css
+    external css
+        it has three processing
+        define css
+        always import in index.js
+        use it
+
+Custom Tags:
+    Custom tags are functions that return a markup
+    Custom tags must have their first letter capital
+    Custom tags are components that are used as building blocks in a website
+    rafce + tab = boiler plate for react component
+
+Props:
+    Passing value in component is called props
+    Basically props is arguments
+    Style is also a props in react. It is passed as an object
+    In-built html props such as style, href, src, className does not support in custom tag(component)
+
+JSOperations:
+    We cannot use if-else, for-while, do-while loop inside html tag <div></div>
+    Therefore we have to use ternary operator instead.
+
+Navigation:
+    <a href =""> changes a page and renders everything
+    <NavLink to={""}> changes a component only for SPA
+        It does not render the entire page
+
+Path:
+    http://localhost:3000/about?Name=Sid&Address=Kathmandu
+    
+        Everything before ? is route
+             http://localhost:3000 is Base Url
+                /about is route parameter
+
+        Everything after ? is query
+            Name=Sid&Address=Kathmandu
+                Name=Sid & Address=Kathmandu are query parameters
+
+React Fragment:
+    Use react fragment for wrapper but note it does not support props
+

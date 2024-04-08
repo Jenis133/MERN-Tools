@@ -1,0 +1,54 @@
+Day 1
+js is a single threaded, synchronous language, dynamic language 
+commented code will not run
+Data
+    string  they are always wrapped by double quotes
+    number 
+    boolean
+operator
++ operator
+    1+1 = 2
+    "1"+"1" = "11"
+    "1"+1 = "11"   always string wins
+In js operation are performed between two values
+
+variable
+
+
+Day 2
+variable
+    we must define variable before calling variable
+    variable name must be descriptive
+    always use camelcase convention for naming variable
+    
+
+
+
+Interview 
+define js  single threaded, synchronous language, dynamic language
+1+2+"3"+4+5  
+truthy and falsy
+
+
+
+Error
+address is not defined   => it means the address variable is not defined
+
+operator 
+    arithmetic operator  (+,-,*,/, %)
+
+string
+    it can be define by using single quotes or double quotes
+    we can not use single quotes inside single codes and same for double quotes
+
+
+Day 5
+{
+    every curly braces is like new file
+        we can define variable , call variable and so
+        but we can not export variable defined inside curly braces
+}
+
+hello nitan
+address =gagalphedi
+ 
